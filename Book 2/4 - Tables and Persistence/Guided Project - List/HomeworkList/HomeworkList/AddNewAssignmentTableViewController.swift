@@ -129,7 +129,7 @@ class AddNewAssignmentTableViewController: UITableViewController {
         let dueDate = dueDatePickerView.date
         let notes = notesTextView.text
         
-        homework = Homework(subject: subject, title: title, isComplete: isComplete, dueDate: dueDate, notes: notes)
+        homework = Homework(subject: subject, title: title, isComplete: isComplete, dueDate: dueDate, notes: notes ?? "")
     }
     
 
